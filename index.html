@@ -19,33 +19,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <body>
 
 
-<nav class="navbar">
-
-<h2 class="logo">Nazmus Shakib</h2>
-
-<ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="skills.html">Skills</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="project.html">Projects</a></li>
-<li><a href="activities.html">Activities</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="certificates.html">Certificates</a></li>
-
-</ul>
-
-<div class="mode-toggle">
-
-<button id="darkBtn">🌙</button>
-<button id="lightBtn">☀️</button>
-
-</div>
-
-</nav>
-
-
+<div id="navbar"></div>
 
 
 <section class="hero">
@@ -70,7 +44,7 @@ through technology.
 
 <a href="resume.html" class="btn">View Resume</a>
 
-<a href="#footer" class="btn-outline">Contact Me</a>
+<a href="contact.html" class="btn-outline">Contact Me</a>
 
 </div>
 
@@ -88,110 +62,36 @@ through technology.
 
 
 <section class="game-section">
+<h2 class="game-title">
+<span class="game-icon">🧠</span>
+Memory Card Match Game
+<span class="game-icon">🧠</span>
+</h2>
 
-<h2>Memory Card Match Game</h2>
+<div class="game-info">
+
+<div class="info-box">
+Moves: <span id="moves">0</span>
+</div>
+
+<div class="info-box">
+Time: <span id="timer">0</span>s
+</div>
+
+<button class="restart-btn" onclick="restartGame()">
+<i class="fa-solid fa-rotate"></i> Restart
+</button>
+
+</div>
 
 <div class="game-board" id="gameBoard"></div>
+
+<p id="winMessage" class="win-message"></p>
 
 </section>
 
 
-
-
-<footer class="footer" id="footer">
-
-<div class="footer-container">
-
-
-
-<div class="footer-about">
-
-<h2>Nazmus Shakib</h2>
-
-<p>
-Aspiring Software Engineer & Tech Enthusiast passionate about
-building innovative solutions and making a positive impact
-through technology.
-</p>
-
-<p class="made">
-Made with passion in Bangladesh 🇧🇩
-</p>
-
-</div>
-
-
-
-<div class="footer-links">
-
-<h3>Quick Links</h3>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="skills.html">Skills</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="project.html">Projects</a></li>
-<li><a href="activities.html">Activities</a></li>
-<li><a href="#footer">Contact</a></li>
-
-</ul>
-
-</div>
-
-
-
-
-<div class="footer-contact">
-
-<h3>Contact</h3>
-
-<p>
-<i class="fa-solid fa-envelope"></i>
-nazmusshakib252@gmail.com
-</p>
-
-<p>
-<i class="fa-solid fa-phone"></i>
-+8801817434342
-</p>
-
-<p>
-<i class="fa-solid fa-location-dot"></i>
-Bashundhara, Dhaka, Bangladesh
-</p>
-
-<div class="footer-social">
-
-<a href="#">
-<i class="fa-brands fa-linkedin"></i>
-</a>
-
-<a href="#">
-<i class="fa-brands fa-github"></i>
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="footer-bottom">
-
-<p>© 2026 Nazmus Shakib. All rights reserved.</p>
-
-<p class="tech">
-Built with HTML, CSS, Bootstrap 5, and Vanilla JavaScript
-</p>
-
-</div>
-
-</footer>
-
-
+<div id="footer"></div>
 <script src="js/script.js"></script>
 <script src="js/game.js"></script>
 

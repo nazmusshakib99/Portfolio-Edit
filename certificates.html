@@ -1,1 +1,111 @@
-<h1 style='padding:40px'>Certificates Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Certificates | Nazmus Shakib</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+<div id="navbar"></div>
+<!-- CERTIFICATES SECTION -->
+
+<section class="certificate-section">
+
+<h1 class="certificate-title">
+My <span>Certificates</span>
+</h1>
+
+<p class="certificate-subtitle">
+Educational achievements and professional certifications that showcase my learning journey.
+</p>
+
+<div class="certificate-container">
+
+<!-- SSC -->
+
+<div class="certificate-card">
+
+<h3><i class="fa-solid fa-award"></i> SSC</h3>
+
+<p>Secondary School Certificate</p>
+
+<div class="certificate-preview">
+<img src="images/ssc skb.jpg" alt="SSC Certificate">
+</div>
+
+<div class="certificate-buttons">
+
+<a href="images/ssc skb.jpg" download class="btn">
+Download Certificate
+</a>
+
+<button class="btn view-btn" onclick="openModal('images/ssc skb.jpg')">
+View Photo
+</button>
+
+</div>
+
+</div>
+
+
+<!-- HSC -->
+
+<div class="certificate-card">
+
+<h3><i class="fa-solid fa-award"></i> HSC</h3>
+
+<p>Higher Secondary Certificate</p>
+
+<div class="certificate-preview">
+<img src="images/hsc skb.jpg" alt="HSC Certificate">
+</div>
+
+<div class="certificate-buttons">
+
+<a href="images/hsc skb.jpg" download class="btn">
+Download Certificate
+</a>
+
+<button class="btn view-btn" onclick="openModal('images/hsc skb.jpg')">
+View Photo
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- IMAGE VIEW MODAL -->
+
+<div id="imageModal" class="modal">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<img class="modal-content" id="modalImg">
+
+</div>
+
+
+<div id="footer"></div>
+
+<script src="js/script.js"></script>
+
+
+
+
+</body>
+</html>

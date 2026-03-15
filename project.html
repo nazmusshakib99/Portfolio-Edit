@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | Nazmus Shakib</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<section class="project-section">
+
+<h1 class="project-title">
+My <span>Projects</span>
+</h1>
+
+<p class="project-subtitle">
+A showcase of my projects demonstrating both software development and technical capabilities.
+</p>
+
+<div class="project-container">
+
+<!-- PROJECT 1 -->
+<div class="project-card">
+
+<h3>Pharmacy Management System</h3>
+
+<p>
+Developed a Java GUI-based desktop application to manage pharmacy products and admin information.
+</p>
+
+<div class="tags">
+<span>Java</span>
+<span>GUI</span>
+</div>
+
+<div class="project-buttons">
+
+<button class="btn" onclick="openDemo(['images/pharmacy1.jpg','images/pharmacy2.jpg','images/pharmacy3.jpg',
+ 'images/pharmacy4.jpg','images/pharmacy5.jpg','images/pharmacy6.jpg'])">
+Demo
+</button>
+
+<a href="https://github.com/nazmusshakib99/Java_Project" target="_blank" class="btn-outline">
+Visit Project
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 2 -->
+<div class="project-card">
+
+<h3>Hotel Management System</h3>
+
+<p>
+Built a hotel management system using C# and .NET with modules for admin and receptionist operations.
+</p>
+
+<div class="tags">
+<span>C#</span>
+<span>.NET</span>
+<span>Desktop App</span>
+</div>
+
+<div class="project-buttons">
+
+<button class="btn" onclick="openDemo(['images/hotel1.jpg','images/hotel2.jpg','images/hotel3.jpg','images/hotel4.jpg','images/hotel5.jpg',
+    'images/hotel6.jpg','images/hotel7.jpg','images/hotel8.jpg','images/hotel9.jpg','images/hotel10.jpg'])">
+Demo
+</button>
+
+<a href="https://github.com/nazmusshakib99/C_Sharp_Project" target="_blank" class="btn-outline">
+Visit Project
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+<div class="project-card">
+
+<h3>City Road Animation</h3>
+
+<p>
+Developed an OpenGL computer graphics project simulating a city road environment with animations.
+</p>
+
+<div class="tags">
+<span>OpenGL</span>
+<span>Computer Graphics</span>
+</div>
+
+<div class="project-buttons">
+
+<button class="btn" onclick="openDemo(['images/cv1.jpg','images/cv2.jpg','images/cv3.jpg'])">
+Demo
+</button>
+
+<a href="https://github.com/nazmusshakib99/Computer_Graphics_Project" target="_blank" class="btn-outline">
+Visit Project
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 4 -->
+<div class="project-card">
+
+<h3>Portfolio Website</h3>
+
+<p>
+Developed a personal portfolio website to showcase projects and technical skills.
+</p>
+
+<div class="tags">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+
+<div class="project-buttons">
+
+<button class="btn" onclick="openDemo(['images/pf2.jpg','images/pf1.jpg'])">
+Demo
+</button>
+
+<a href="https://yourgithubusername.github.io" target="_blank" class="btn-outline">
+Visit Project
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DEMO MODAL -->
+
+<div id="demoModal" class="modal">
+
+<span class="close" onclick="closeDemo()">&times;</span>
+
+<img id="demoImage" class="modal-content">
+
+<div class="demo-nav">
+<button onclick="prevImage()">❮</button>
+<button onclick="nextImage()">❯</button>
+</div>
+
+</div>
+   
+<div id="footer"></div>
+<script src="js/script.js"></script>
+
+</body>
+</html>

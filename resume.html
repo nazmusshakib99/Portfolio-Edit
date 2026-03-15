@@ -1,1 +1,114 @@
-<h1 style='padding:40px'>Resume Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resume | Nazmus Shakib</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+
+<!-- RESUME SECTION -->
+
+<section class="resume-section">
+
+<h1 class="resume-title">
+My <span>Resume</span>
+</h1>
+
+<p class="resume-subtitle">
+Download my complete resume to learn more about my academic background, skills, and project experience.
+</p>
+
+<div class="resume-container">
+
+
+<!-- RESUME PAGE 1 -->
+
+<div class="resume-card">
+
+<h3>
+<i class="fa-solid fa-file-lines"></i>
+Resume - Page 1
+</h3>
+
+<div class="resume-preview">
+<img src="images/Resume1.jpg" alt="Resume Page 1">
+</div>
+
+<div class="resume-buttons">
+
+<a href="images/Resume1.jpg" download class="btn">
+Download Resume
+</a>
+
+<button class="btn view-btn" onclick="openModal('images/Resume1.jpg')">
+View Photo
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- RESUME PAGE 2 -->
+
+<div class="resume-card">
+
+<h3>
+<i class="fa-solid fa-file-lines"></i>
+Resume - Page 2
+</h3>
+
+<div class="resume-preview">
+<img src="images/Resume2.jpg" alt="Resume Page 2">
+</div>
+
+<div class="resume-buttons">
+
+<a href="images/Resume2.jpg" download class="btn">
+Download Resume
+</a>
+
+<button class="btn view-btn" onclick="openModal('images/resume2.jpg')">
+View Photo
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- IMAGE MODAL -->
+
+<div id="imageModal" class="modal">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<img class="modal-content" id="modalImg">
+
+</div>
+
+<div id="footer"></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
